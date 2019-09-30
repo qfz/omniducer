@@ -1,6 +1,6 @@
 # Omniducer
 
-Redux is fairly low level library and is thus verbose. There are libraries such as [redux-actions](https://github.com/redux-utilities/redux-actions) that can help reduce boilerplate code, this library is one of them. It helps reduce/eliminate the need to write selectors and reducers.
+Redux is a fairly low level library and is thus verbose. There are libraries such as [redux-actions](https://github.com/redux-utilities/redux-actions) that can help reduce boilerplate code, this library is one of them. It helps reduce/eliminate the need to write selectors and reducers.
 
 ## Installation
 ```
@@ -29,6 +29,7 @@ import {useDispatch, useSelector} from "react-redux"
 
 const actionType = "SET_DATA"
 
+// createOmniAction has the same signature as createAction from redux-actions
 const setData = createOmniAction(actionType)
 const getData = createOmniSelector(actionType, "defaultValue")
 
