@@ -31,7 +31,7 @@ export function createOmniAction<Payload = undefined>(
     return createAction<Payload, IsOmni>(actionType, payloadCreator, omniMetaCreator)
 }
 
-export function omniReducer<Payload>(state: OmniState = {}, action: OmniAction<Payload>) {
+function omniReducer<Payload>(state: OmniState = {}, action: OmniAction<Payload>) {
     if (action.meta && action.meta.isOmni) {
         return {
             ...state,
@@ -58,6 +58,6 @@ export function createOmniSelector<ReturnType = undefined>(actionType: string, d
     )
 }
 
-export const omniReducerSlice = {
+export const omniducerSlice = {
   omni: omniReducer
 }
