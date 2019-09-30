@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "@types/redux-actions": "^2.6.1",
-    "redux-actions": "^2.6.5"
+    "redux-actions": "^2.6.5",
+    "reselect": "^4.0.0"
   }
 }
