@@ -47,3 +47,5 @@ const CompA = () => {
     )
 }
 ```
+
+With the above setup, you don't need to write any reducer, the data will be saved in the redux store automatically. And you don't need to write any selector, the `createOmniSelector` function will create it for you, and it takes an optional second parameter as the default value for when the piece of state is `undefined`.
